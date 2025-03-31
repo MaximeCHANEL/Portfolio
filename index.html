@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maxime Chanel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#veille">Veille</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <h1>Maxime CHANEL</h1>
+        <p>Étudiant en deuxième année d'informatique</p>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos">
+        <h2>À propos</h2>
+        <div class="content">
+            <div class="text-content">
+                <p>Bonjour à tous et bienvenue sur mon portfolio !</p>
+                <p>Je m’appelle Maxime CHANEL, j’ai 19 ans et je suis originaire de Lyon. Passionné par le monde de l’informatique et du jeu vidéo, j’ai choisi en première les spécialités Mathématiques et NSI (Numérique et Sciences Informatiques), puis Mathématiques en terminale...</p>
+                <p>Je serais ravi de pouvoir vous accompagner dans vos futurs projets. Si vous souhaitez en savoir davantage sur moi, vous trouverez ci-dessous mon CV ainsi qu'une grille d’évaluation.</p>
+                <p>Merci pour votre lecture et à bientôt !</p>
+            </div>
+            <div class="photo-placeholder">
+                <img src="Images/photo_profil.jpg" alt="Photo de Maxime Chanel">
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="button1">
+                <button id="openCV" type="submit">Mon CV</button>
+                <script>
+                    document.getElementById('openCV').addEventListener('click', function() {
+                        window.open('Fichiers/CHANEL_Maxime_CV_Alternance_developpeur_web_Recherche_ALTERNANCE_1er_mars_2025.pdf', '_blank');
+                    });
+                </script>
+            </div>
+            <div class="button2">
+                <button id="openGrille" type="submit">Ma grille d'évaluation</button>
+                <script>
+                    document.getElementById('openGrille').addEventListener('click', function() {
+                        window.open('Fichiers/Tableau de synthèse - Epreuve E4 - BTS SIO 2024.pdf', '_blank');
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences">
+        <h2>Mes compétences</h2>
+        
+        <h3>Front-end</h3>
+        <div class="skills">
+            <div class="skill">
+                <div class="circle"><img src="Images/Logo_html.png" alt="HTML"></div>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <div class="circle"><img src="Images/Logo_css.png" alt="CSS"></div>
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <div class="circle"><img src="Images/Logo_javascript.png" alt="JavaScript"></div>
+                <p>JavaScript</p>
+            </div>
+        </div>
+        
+        <h3>Back-end</h3>
+        <div class="skills">
+            <div class="skill">
+                <div class="circle"><img src="Images/Logo_php.png" alt="PHP"></div>
+                <p>PHP</p>
+            </div>
+            <div class="skill">
+                <div class="circle" id="ajustements"><img src="Images/Logo_python.png" alt="Python"></div>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <div class="circle"><img src="Images/Logo_sql.png" alt="SQL"></div>
+                <p>SQL</p>
+            </div>
+        </div>
+
+        <h3>Autre</h3>
+        <div class="skills">
+            <div class="skill">
+                <div class="circle"><img src="Images/Logo_git.png" alt="Git"></div>
+                <p>Git</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+        <h2>Mes projets</h2>
+        <div class="projet">
+            <div class="projet-description">
+                <p>Le projet GSB est un projet que l’on doit réaliser pour l’épreuve E6 du BTS, c’est une application web qui consiste à créer une plateforme pour que 
+                    des visiteurs médicaux lorsqu’ils font une visite médical, un déplacement cela soit mis dans l’application. A chaque fin de mois, le comptable récupère 
+                    toutes les dépenses effectuer des visites médical, ainsi que les frais hors forfait avec possibilité de fournir un justificatif. Pour calculer combien 
+                    cela fait et donc pouvoir gérer les dépenses de manière efficace et sans difficulté. Ce projet à été réalisé avec le langage php, ainsi qu’avec du CSS 
+                    pour le style. Pour réaliser cette application web, j’ai été en groupe avec 2 autres personnes, ce qui m’a permis de développer d’avantage mes compétences 
+                    en travail d’équipe.
+                </p>
+            </div>
+            <div class="projet-image">
+                <img src="Images/Logo_html.png" alt="Projet 1">
+            </div>
+        </div>
+        <div class="projet">
+            <div class="projet-image">
+                <img src="Images/Logo_css.png" alt="Projet 2">
+            </div>
+            <div class="projet-description">
+                <p>Ce projet a été réalisé dans le cadre de plusieurs modules, à savoir : <strong>User Experience, Développement d'environnements mobiles</strong> et <strong>Atelier Responsive Web</strong>. Pour ce projet, nous avons exploré tous les aspects nécessaires pour qu’un site puisse attirer des utilisateurs et leur offrir une expérience agréable.
+
+                    Le projet consistait à concevoir un site web sur le thème de la cybersécurité. J'ai ainsi développé un site qui propose :
+                    
+                    des cours sur la cybersécurité,
+                    des conseils sur les bonnes pratiques pour se protéger et les erreurs à éviter,
+                    ainsi qu’un petit quiz à la fin de chaque cours pour évaluer les connaissances acquises.
+                    L’objectif principal du projet et du site web est éducatif, tout en intégrant une dimension ludique pour engager les utilisateurs.
+                    Une version desktop est disponible sous forme de site web, et une version mobile a également été développée sous forme d'application.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expériences -->
+    <section id="experiences">
+        <h2>Mes expériences</h2>
+        
+        <div class="experience">
+            <h3>Stage 1</h3>
+            <p>
+                Lors de ma première année, j’ai fait un stage dans l’entreprise Com&Company qui fait partie du groupe Valority. L’entreprise se trouve dans le secteur 
+                de l’immobilier. J’ai travaillé sur un site qu’utilise l’entreprise en interne pour gérer toutes les factures, l’administration des tous les biens des 
+                clients. J’ai fait du développement web côté backend, en codant avec le framework symfony. Lors de ce stage j’ai appris le langage et par la suite j’ai 
+                créé une api dans laquelle j’ai récupérer les dossiers des clients qui avait fait appel à Com&Company et j’ai fait des filtres pour pouvoir rechercher plus 
+                facilement et plus efficacement les dossiers. J’ai également créer une autre api …  . Et j’ai fait une documentation en français à la fin de tout le travail 
+                que j’ai produit. (Lors de ce premier stage en entreprise j’ai pu découvrir le monde de l’entreprise et j’ai pu assister à une formation au sein de 
+                l’entreprise sur le langage que j’ai appris pour faire des missions).
+            </p>
+        </div>
+
+        <div class="experience">
+            <h3>Stage 2</h3>
+            <p>
+                Lors de ma deuxième année, j’ai fait un stage dans l’entreprise ANAF. Cette entreprise est une association, qui possède des antennes dans toute la France 
+                avec un siège à Lyon. J’ai travaillé sur plusieurs sites car l’ANAF possède 6 sites web différents pour aider les jeunes apprentis. Sur le premier site, 
+                j’ai effectué des mises à jour d’informations car c’était le début de l’année 2025 et de nouvelles choses ont été pensé . J’ai fait du développement web 
+                côté backend, en codant avec en php. J’ai également sur une autre site web, coder des fonctionnalités de commentaire que peut laisser un intervenant de 
+                l’ANAF à un jeune, j’ai corrigé des bugs, fait du responsive pour mobile et tablette. J’ai même participé à une réunion de présentation de l’équipe dans 
+                laquelle j’étais.
+            </p>
+        </div>
+    </section>
+
+    <!-- Page Veille -->
+    <section id="veille">
+        <div class="container">
+            <h1>Veille Technologique</h1>
+            <div class="description">
+                <p>
+                    La veille technologique ou veille scientifique et technique est un processus cyclique de gestion de l'information, tendant à l'automatisation, qui a 
+                    pour objectif d'identifier les nouveautés et les tendances dans les domaines scientifiques et techniques.
+                </p>
+                <p>
+                    Cette surveillance de l'information permet de rester informé sur l'état de l'art d'un domaine ou d'une technologie et d'anticiper l'évolution 
+                    de l'environnement et ainsi prendre des décisions éclairées et adaptées tant sur le plan stratégique, économique, technologique que commercial.
+                </p>
+                    La veille technologique, nous permet de nous tenir au courant des dernières inovations technologiques, ainsi que se tenir au courant des 
+                    nouveautés sur des langages avec de nouvelles versions. Les sources peuvent être des sites spécialisés, des blogs experts, réseaux sociaux mais 
+                    attention il faut impérativement confirmer sa source lorsque l’on regarde sur les réseaux sociaux.
+                </p>
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="container2">
+            <h1 class="juridique">Veille Juridique</h1>
+            <div class="description">
+                <p class="veille_juridique">
+                    Quand à la veille juridique, c’est le même processus que pour la veille technologique, c’est-à-dire de faire une veille, chercher des nouveautés, 
+                    se tenir informé des tendances mais dans le domaine du droit. Cela intègre naturellement la veille législative, réglementaire, jurisprudentielle 
+                    et/ou doctrinale.
+                </p>
+                <p class="veille_juridique">
+                    Les principaux objectifs de la veille juridique sont de suivre l’évolution des lois et des réglements, d’anticiper les impacts des nouvelles normes, 
+                    adapter les stratégies d’entreprise aux changements.
+                </p>
+                <p class="veille_juridique">
+                    Les sources peuvent être des journaux officiels, des sites gouvernementaux, des alertes et newsletters juridiques.
+                </p>
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+     <!-- Page Contact -->
+     <div id="contact">
+        <div class="container">
+            <h1>Me contacter</h1>
+            <div class="links">
+                <div class="img_contact">
+                    <div>Mon LinkedIn :</div>
+                    <a href="https://www.linkedin.com/in/maximechanel" target="_blank">
+                        <img src="Images/linkedin.png" alt="Profil LinkedIn">
+                    </a>
+                </div>
+                <div class="img_contact">
+                    <div>Mon GitHub :</div>
+                    <a href="https://github.com/maximechanel" target="_blank">
+                        <img src="Images/github.png" alt="Profil GitHub">
+                    </a>
+                </div>
+                <div class="img_contact">
+                    <div>Mon Email :</div>
+                    <a href="mailto:maxime1.chanel1@gmail.com">
+                        <img src="Images/contact_mail.png" alt="Envoyer un email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2025<br><em>Designed by Maxime CHANEL</em><br>Tous les droits réservés</p>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
