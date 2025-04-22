@@ -32,11 +32,12 @@
             <div class="text-content">
                 <p>Bonjour à tous et bienvenue sur mon portfolio !</p>
                 <p>Je m’appelle Maxime CHANEL, j’ai 19 ans et je suis originaire de Lyon. Passionné par le monde de l’informatique et du jeu vidéo, j’ai choisi en première les spécialités Mathématiques et NSI (Numérique et Sciences Informatiques), puis Mathématiques en terminale...</p>
+                <p>Par la suite j'ai intégrer l'EPSI</p>
                 <p>Je serais ravi de pouvoir vous accompagner dans vos futurs projets. Si vous souhaitez en savoir davantage sur moi, vous trouverez ci-dessous mon CV ainsi qu'une grille d’évaluation.</p>
                 <p>Merci pour votre lecture et à bientôt !</p>
             </div>
             <div class="photo-placeholder">
-                <img src="Images/photo_profil.jpg" alt="Photo de Maxime Chanel">
+                <img src="Images/maxime_photo_alternance.jpg" alt="Photo de Maxime Chanel">
             </div>
         </div>
         <div class="buttons">
@@ -52,7 +53,7 @@
                 <button id="openGrille" type="submit">Ma grille d'évaluation</button>
                 <script>
                     document.getElementById('openGrille').addEventListener('click', function() {
-                        window.open('Fichiers/Tableau de synthèse - Epreuve E4 - BTS SIO 2024.pdf', '_blank');
+                        window.open('Fichiers/8-1 - BTS SIO - 2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse.pdf', '_blank');
                     });
                 </script>
             </div>
@@ -72,6 +73,10 @@
             <div class="skill">
                 <div class="circle"><img src="Images/Logo_css.png" alt="CSS"></div>
                 <p>CSS</p>
+            </div>
+            <div class="skill" id="tailwind">
+                <div class="circle"><img src="Images/Logo_tailwind.png" alt="Tailwind"></div>
+                <p>Tailwind CSS</p>
             </div>
             <div class="skill">
                 <div class="circle"><img src="Images/Logo_javascript.png" alt="JavaScript"></div>
@@ -97,12 +102,15 @@
 
         <h3>Autre</h3>
         <div class="skills">
-            <div class="skill">
+            <div class="skill" id="git">
                 <div class="circle"><img src="Images/Logo_git.png" alt="Git"></div>
                 <p>Git</p>
             </div>
+            <div class="skill" id="trello">
+                <div class="circle"><img src="Images/Logo_trello.png" alt="Trello"></div>
+                <p>Trello</p>
+            </div>
         </div>
-        
     </section>
 
     <!-- Section Projets -->
@@ -174,7 +182,7 @@
     <!-- Page Veille -->
     <section id="veille">
         <div class="container">
-            <h1>Veille Technologique</h1>
+            <h1 class="section-title">Veille Technologique</h1>
             <div class="description">
                 <p>
                     La veille technologique ou veille scientifique et technique est un processus cyclique de gestion de l'information, tendant à l'automatisation, qui a 
@@ -184,35 +192,35 @@
                     Cette surveillance de l'information permet de rester informé sur l'état de l'art d'un domaine ou d'une technologie et d'anticiper l'évolution 
                     de l'environnement et ainsi prendre des décisions éclairées et adaptées tant sur le plan stratégique, économique, technologique que commercial.
                 </p>
+                <p>
                     La veille technologique, nous permet de nous tenir au courant des dernières inovations technologiques, ainsi que se tenir au courant des 
                     nouveautés sur des langages avec de nouvelles versions. Les sources peuvent être des sites spécialisés, des blogs experts, réseaux sociaux mais 
                     attention il faut impérativement confirmer sa source lorsque l’on regarde sur les réseaux sociaux.
                 </p>
-                <img src="" alt="">
             </div>
         </div>
+    
         <div class="container2">
-            <h1 class="juridique">Veille Juridique</h1>
+            <h1 class="section-title juridical">Veille Juridique</h1>
             <div class="description">
-                <p class="veille_juridique">
+                <p>
                     Quand à la veille juridique, c’est le même processus que pour la veille technologique, c’est-à-dire de faire une veille, chercher des nouveautés, 
                     se tenir informé des tendances mais dans le domaine du droit. Cela intègre naturellement la veille législative, réglementaire, jurisprudentielle 
                     et/ou doctrinale.
                 </p>
-                <p class="veille_juridique">
+                <p>
                     Les principaux objectifs de la veille juridique sont de suivre l’évolution des lois et des réglements, d’anticiper les impacts des nouvelles normes, 
                     adapter les stratégies d’entreprise aux changements.
                 </p>
-                <p class="veille_juridique">
+                <p>
                     Les sources peuvent être des journaux officiels, des sites gouvernementaux, des alertes et newsletters juridiques.
                 </p>
-                <img src="" alt="">
             </div>
         </div>
-    </section>
+    </section>    
 
-     <!-- Page Contact -->
-     <div id="contact">
+    <!-- Page Contact -->
+    <div id="contact">
         <div class="container">
             <h1>Me contacter</h1>
             <div class="links">
