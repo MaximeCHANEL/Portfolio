@@ -585,6 +585,10 @@ footer {
         display: flex;
     }
 
+    nav:not(.open) {
+        pointer-events: none;
+    }
+
     nav {
         position: fixed;
         width: 100vw;

@@ -27,14 +27,26 @@
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('nav');
         const navList = document.querySelector('nav ul');
+        const navLinks = document.querySelectorAll('nav ul li a'); // 👈 Tous les liens du menu
 
         hamburger.addEventListener('click', function () {
             hamburger.classList.toggle('open');
-            nav.classList.toggle('open');      // Ajoute la classe sur <nav>
-            navList.classList.toggle('open');  // Continue à l'ajouter sur <ul>
+            nav.classList.toggle('open');
+            navList.classList.toggle('open');
             hamburger.setAttribute('aria-expanded', navList.classList.contains('open'));
         });
+
+        // 👉 Ferme le menu quand on clique sur un lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                hamburger.classList.remove('open');
+                nav.classList.remove('open');
+                navList.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
     </script>
+
 
     <!-- Section Accueil -->
     <section id="accueil">
