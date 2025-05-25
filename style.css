@@ -733,6 +733,104 @@ footer {
     #contact .container {
         padding-left: 50px;
     }
+
+    #apropos,
+    #competences,
+    #projets,
+    #experiences,
+    #veille {
+        padding: 40px 20px;
+        height: auto;
+        min-height: auto;
+        max-height: none;
+        overflow: visible;
+        box-sizing: border-box;
+    }
+
+    #apropos h2,
+    #veille h1.section-title {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    #apropos .text-content {
+        font-size: 1em;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .circle img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+    }
+
+    .projet {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .projet-description {
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .projet-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .experience {
+        margin-bottom: 30px;
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .experience h3 {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    .experience p {
+        font-size: 0.95em;
+    }
+
+    .iframe-wrapper {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .iframe-wrapper iframe {
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+    }
+
+    #veille .title-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 
